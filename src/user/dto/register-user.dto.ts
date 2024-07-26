@@ -1,9 +1,5 @@
 import { IsNotEmpty, MinLength } from "class-validator";
-// export class RegisterUserDto {
-//   username: string;
-//   password: string;
-// }
-// 添加校验
+
 export class RegisterUserDto {
   @IsNotEmpty({ message: '用户名不能为空' })
   username: string;
