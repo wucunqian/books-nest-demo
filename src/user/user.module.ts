@@ -5,7 +5,6 @@ import { DbModule } from 'src/db/db.module';
 
 @Module({
   imports: [
-    // 调用数据库方法，将数据库创建到此目录下
     DbModule.register({
       path: "src/db/users.json"
     })

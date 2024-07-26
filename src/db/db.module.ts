@@ -7,6 +7,7 @@ export interface DbModuleOptions {
 
 @Module({})
 export class DbModule {
+  // 动态模块注入 DynamicModule 
   static register(options: DbModuleOptions): DynamicModule {
     return {
       module: DbModule,
