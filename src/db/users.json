@@ -1,1 +1,6 @@
-[{"username":"小二","password":"123546"},{"username":"xiaowu","password":"123456"}]
+[
+  {
+    "username": "小吴",
+    "password": "123456"
+  }
+]

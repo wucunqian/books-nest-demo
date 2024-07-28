@@ -39,8 +39,13 @@ export class UserService {
     // 将新用户的数据持久化到数据库中
     await this.dbService.write(users);
 
-    // 返回传递的数据
-    return user;
+    // 返回传递的数据和状态码
+    const obj = {
+      code: 200,
+      message: '注册成功',
+      data: user,
+    };
+    return obj;
   }
 
   /**
@@ -66,7 +71,12 @@ export class UserService {
     }
 
     // 如果密码正确，则返回找到的 User 实体
-    return foundUser;
+    const obj = {
+      code: 200,
+      message: '登录成功',
+      data: foundUser,
+    };
+    return obj;
   }
 
 }
