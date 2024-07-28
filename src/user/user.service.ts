@@ -42,7 +42,7 @@ export class UserService {
     // 返回传递的数据和状态码
     const obj = {
       code: 200,
-      message: '注册成功',
+      message: '注册成功，请登录',
       data: user,
     };
     return obj;
