@@ -1,7 +1,7 @@
 import { UpdateBookDto } from './dto/update-book.dto';
 import { CreateBookDto } from './dto/create-book.dto';
 import { BadRequestException, Inject, Injectable } from '@nestjs/common';
-import { DbService } from 'src/db/db.service';
+import { DbService } from 'db/db.service';
 // book 的数据库信息字段和类型
 import { Book } from './entities/book.entity';
 
