@@ -7,7 +7,8 @@ const storage = multer.diskStorage({
 			fs.mkdirSync('uploads');
 		} catch (e) { }
 
-		cb(null, 'uploads');
+		// 上传到 db/uploads 目录中，并使用随机字符串作为 filename 保证 uniqueness.
+		cb(null, 'db/uploads');
 	},
 	filename: function (req, file, cb) {
 		const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9) + '-' + file.originalname;
